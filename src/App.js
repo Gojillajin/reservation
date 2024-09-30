@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import Summanry from './Components/summary';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar bg="primary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="/">예약 관리 현황</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/">예약 현황</Nav.Link>
+            <Nav.Link href="/moon">달은 품은 한옥</Nav.Link>
+            <Nav.Link href="/king">의자왕</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <Summanry />
     </div>
   );
 }
