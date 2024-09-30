@@ -5,7 +5,7 @@ import Summanry from './Components/summary';
 function App() {
   return (
     <div className="App">
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="light" data-bs-theme="light">
         <Container>
           <Navbar.Brand href="/">예약 관리 현황</Navbar.Brand>
           <Nav className="me-auto">
